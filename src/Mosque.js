@@ -14,7 +14,7 @@ const Mosque = () => {
       <main className="container">
         <div className="page-title">
           <img className="logo" src={logo} alt="" />
-          <h1 className="mosque_islamApp">{translate("mosque_islamApp")}</h1>
+          <h1 className="mosque_islamApp">{translate("mosque_islamApp")} </h1>
           <p className="application">{translate("application")}</p>
           <a href="#">
           <Download />
