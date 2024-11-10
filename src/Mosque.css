@@ -1,0 +1,126 @@
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.language-mosque {
+  color: var(--background-color-dark);
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.mosque_islamApp {
+  color: var(--background-color-dark);
+  font-size: 36px;
+}
+
+.application {
+  color: var(--background-color-dark);
+  font-size: 24px;
+}
+
+.screen {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.bid {
+  margin-top: 121px;
+  text-align: center;
+}
+
+.bid_title {
+  margin: 0 auto;
+}
+
+.times {
+  color: var(--background-color-dark);
+  font-size: 36px;
+}
+
+.times_1 {
+  color: var(--background-color-dark);
+  font-size: 24px;
+  margin-top: 12px;
+}
+
+.map {
+  width: 100%;
+  margin-top: 70px;
+}
+
+.helped_text {
+  color: var(--background-color-dark);
+  font-size: 24px;
+  margin-top: 78px;
+  font-weight: 700;
+}
+
+.bid_helped_text {
+  color: var(--background-color-dark);
+  font-size: 24px;
+  width: 214px;
+}
+
+.bid_helped {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 26px;
+  width: 80%;
+}
+
+.Schedule {
+  margin-top: 121px;
+  text-align: center;
+}
+
+.Schedule_img {
+  width: 100%;
+  margin-top: 39px;
+}
+
+.questions {
+  text-align: center;
+  margin-top: 183px;
+  margin-bottom: 139px;
+}
+
+/* Медиазапрос для мобильных устройств */
+@media (max-width: 768px) {
+.container {
+  max-width: 675px;
+}
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .mosque_islamApp,
+  .times {
+    font-size: 31px;
+  }
+
+  .application,
+  .times_1,
+  .bid_helped_text {
+    font-size: 22px;
+  }
+
+  .bid_helped {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 568px) {
+  .container {
+    max-width: 355px;
+  }
+}
