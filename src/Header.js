@@ -37,9 +37,9 @@ const Header = () => {
           }`}
         >
           <li
-            className={`menu ${location.pathname === "/" ? "menu_active" : ""}`}
+            className={`menu ${location.pathname === "/islamApp_test" ? "menu_active" : ""}`}
           >
-            <NavLink to="/" exact>
+            <NavLink to="/islamApp_test" exact>
               {translate("home")}
             </NavLink>
           </li>
