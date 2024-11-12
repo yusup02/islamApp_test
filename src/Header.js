@@ -28,7 +28,7 @@ const Header = () => {
       <nav className="navigation">
         {/* Меню, которое меняется в зависимости от устройства */}
 
-        <button className="menu-toggle" onClick={toggleMenu}>
+        <button  className="menu-toggle" onClick={toggleMenu}>
           ☰
         </button>
         <ul
