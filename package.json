@@ -2,6 +2,7 @@
   "name": "islamapp",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://yusup02.github.io/islamApp_test",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -40,6 +41,5 @@
   },
   "devDependencies": {
     "gh-pages": "^6.2.0"
-  },
-  "homepage": "https://yusup02.github.io/islamApp_test"
+  }
 }

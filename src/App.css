@@ -172,8 +172,8 @@ li {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 288px;
-  height: 487.958px;
+  width: 268px;
+  height: 400.958px;
   /* Градиент и анимация */
   background: conic-gradient(
     from 0deg,
@@ -333,5 +333,27 @@ li {
 @media (max-width: 568px) {
   .container {
     max-width: 355px;
+  }
+
+  .gradient-background {
+    width: 167px;
+    height: 256px;
+    bottom: -8%;
+  }
+
+  .islamApp {
+    width: 207px;
+  }
+
+  .title_islamapp {
+    font-size: 32px;
+  }
+
+  .page-title_nstall {
+    margin-top: 26px;
+  }
+
+  .page-title {
+    margin-top: 33px;
   }
 }

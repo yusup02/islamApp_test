@@ -45,7 +45,7 @@ const MainContent = () => {
         <Route path="/mosque" element={<Mosque />} />
         <Route path="/partners" element={<Partners />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/islamApp_test" element={<Home />} />
       </Routes>
     </div>
   );
