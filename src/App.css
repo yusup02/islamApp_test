@@ -36,10 +36,19 @@ a {
   color: inherit;
 }
 
-li {
+.menu {
   list-style-type: none;
   padding: 8px 16px;
   color: #000;
+
+  font-feature-settings: "liga" off, "clig" off;
+  /* Subheadline/Regular */
+  font-family: "SF Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.23px;
 }
 
 .menu:hover {
@@ -131,7 +140,10 @@ li {
   padding: 12px 24px;
 
   border-radius: 100px;
+  background: linear-gradient(135deg, #08e045 0%, #85ed35 57.72%, #c6f62a 100%);
+  border: none;
   color: var(--background-color-light);
+
   text-align: center;
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Roboto Flex";
@@ -139,8 +151,10 @@ li {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  background: linear-gradient(135deg, #08e045 0%, #85ed35 57.72%, #c6f62a 100%);
-  border: none;
+}
+
+.page-title_nstall:hover {
+  cursor: pointer;
 }
 
 .islamApp_conteiner {
@@ -156,9 +170,17 @@ li {
   border: none;
   display: flex;
   background-color: transparent;
-  font-size: 15px;
   border: none;
   color: white;
+
+  font-feature-settings: "liga" off, "clig" off;
+  /* Subheadline/Regular */
+  font-family: "SF Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+  letter-spacing: -0.23px;
 }
 
 .language:focus {

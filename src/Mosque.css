@@ -15,12 +15,25 @@
 
 .mosque_islamApp {
   color: var(--background-color-dark);
+  text-align: center;
+  font-family: "Roboto Flex";
   font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 41px; /* 113.889% */
+  letter-spacing: 0.37px;
 }
 
 .application {
   color: var(--background-color-dark);
+
+  text-align: center;
+  font-family: "Roboto Flex";
   font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 41px; /* 170.833% */
+  letter-spacing: 0.37px;
 }
 
 .screen {
@@ -39,13 +52,27 @@
 
 .times {
   color: var(--background-color-dark);
+
+  text-align: center;
+  font-family: "Roboto Flex";
   font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 41px; /* 113.889% */
+  letter-spacing: 0.37px;
 }
 
 .times_1 {
   color: var(--background-color-dark);
-  font-size: 24px;
   margin-top: 12px;
+
+  text-align: center;
+  font-family: "Roboto Flex";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 41px; /* 170.833% */
+  letter-spacing: 0.37px;
 }
 
 .map {
@@ -93,10 +120,10 @@
 
 /* Медиазапрос для мобильных устройств */
 @media (max-width: 768px) {
-.container {
-  max-width: 675px;
-}
-  
+  .container {
+    max-width: 675px;
+  }
+
   .logo {
     width: 50px;
     height: 50px;
