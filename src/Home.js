@@ -18,8 +18,9 @@ const Home = () => {
         </div>
       </main>
       <section>
-        <div className="gradient-background"></div>
+     
         <div className="islamApp">
+        <div className="gradient-background"></div>
           <img className="islamApp_img" src={screen1} alt="" />
         </div>
       </section>
