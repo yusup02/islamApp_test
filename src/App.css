@@ -55,6 +55,7 @@ a {
   border-radius: 40px;
   background: var(--Grays-Black, #000);
   color: var(--background-color-light);
+  cursor: pointer;
 }
 
 .menu_active {
