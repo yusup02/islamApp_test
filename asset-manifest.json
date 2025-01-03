@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/islamApp_test/static/css/main.d8994d00.css",
-    "main.js": "/islamApp_test/static/js/main.03be1fe5.js",
+    "main.css": "/islamApp_test/static/css/main.4c4db258.css",
+    "main.js": "/islamApp_test/static/js/main.4bca0caa.js",
     "static/js/453.a2746f50.chunk.js": "/islamApp_test/static/js/453.a2746f50.chunk.js",
     "static/media/map.png": "/islamApp_test/static/media/map.5d26c2831a22f489e649.png",
     "static/media/Schedule.png": "/islamApp_test/static/media/Schedule.87a9e7be81f3b54fd423.png",
     "static/media/screen_1.png": "/islamApp_test/static/media/screen_1.3fb24afa3649e4f20e9b.png",
     "static/media/screen.png": "/islamApp_test/static/media/screen.6df5a06a99aa71d76f85.png",
-    "static/media/mockup.png": "/islamApp_test/static/media/mockup.d72c2f9376f332f32c7d.png",
+    "static/media/mockup.png": "/islamApp_test/static/media/mockup.90426f0fbe66c44c1dc5.png",
     "static/media/patners.svg": "/islamApp_test/static/media/patners.b6227db184261cb1d79ccb6ae89035a4.svg",
     "static/media/mosque.svg": "/islamApp_test/static/media/mosque.304b83d2159a4f02a4ab5ba7ebf88e21.svg",
     "static/media/contact.svg": "/islamApp_test/static/media/contact.c17f8eef987466388404addd6dde32fe.svg",
     "static/media/home.svg": "/islamApp_test/static/media/home.ad67136ae22b4202b865b26b4594c590.svg",
     "index.html": "/islamApp_test/index.html",
-    "main.d8994d00.css.map": "/islamApp_test/static/css/main.d8994d00.css.map",
-    "main.03be1fe5.js.map": "/islamApp_test/static/js/main.03be1fe5.js.map",
+    "main.4c4db258.css.map": "/islamApp_test/static/css/main.4c4db258.css.map",
+    "main.4bca0caa.js.map": "/islamApp_test/static/js/main.4bca0caa.js.map",
     "453.a2746f50.chunk.js.map": "/islamApp_test/static/js/453.a2746f50.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8994d00.css",
-    "static/js/main.03be1fe5.js"
+    "static/css/main.4c4db258.css",
+    "static/js/main.4bca0caa.js"
   ]
 }
