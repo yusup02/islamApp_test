@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/islamApp_test/static/css/main.d53ec285.css",
+    "main.css": "/islamApp_test/static/css/main.fca9be8f.css",
     "main.js": "/islamApp_test/static/js/main.7ac7f887.js",
     "static/js/453.a2746f50.chunk.js": "/islamApp_test/static/js/453.a2746f50.chunk.js",
     "static/media/mockupRU.svg": "/islamApp_test/static/media/mockupRU.0cb092b8b29a1d9ad8c45cd1c06c8d99.svg",
@@ -14,12 +14,12 @@
     "static/media/contact.svg": "/islamApp_test/static/media/contact.c17f8eef987466388404addd6dde32fe.svg",
     "static/media/home.svg": "/islamApp_test/static/media/home.ad67136ae22b4202b865b26b4594c590.svg",
     "index.html": "/islamApp_test/index.html",
-    "main.d53ec285.css.map": "/islamApp_test/static/css/main.d53ec285.css.map",
+    "main.fca9be8f.css.map": "/islamApp_test/static/css/main.fca9be8f.css.map",
     "main.7ac7f887.js.map": "/islamApp_test/static/js/main.7ac7f887.js.map",
     "453.a2746f50.chunk.js.map": "/islamApp_test/static/js/453.a2746f50.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d53ec285.css",
+    "static/css/main.fca9be8f.css",
     "static/js/main.7ac7f887.js"
   ]
 }
