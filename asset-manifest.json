@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/islamApp_test/static/css/main.e4f760f2.css",
-    "main.js": "/islamApp_test/static/js/main.5ebf3031.js",
+    "main.js": "/islamApp_test/static/js/main.233c7927.js",
     "static/js/453.a2746f50.chunk.js": "/islamApp_test/static/js/453.a2746f50.chunk.js",
     "static/media/mockup.svg": "/islamApp_test/static/media/mockup.9182d7793d9a9a93f1161be8d011a487.svg",
-    "static/media/ScreenEN.png": "/islamApp_test/static/media/ScreenEN.2e0165f62da7e1ac522e.png",
-    "static/media/ScreenRU.png": "/islamApp_test/static/media/ScreenRU.3210797ea7a1a02c3765.png",
+    "static/media/ScreenEN.heic": "/islamApp_test/static/media/ScreenEN.75550ea587a5239d3b70.heic",
+    "static/media/ScreenRU.heic": "/islamApp_test/static/media/ScreenRU.fdcd6badab25f5026585.heic",
     "static/media/map.png": "/islamApp_test/static/media/map.5d26c2831a22f489e649.png",
     "static/media/Schedule.png": "/islamApp_test/static/media/Schedule.87a9e7be81f3b54fd423.png",
     "static/media/screen.png": "/islamApp_test/static/media/screen.6df5a06a99aa71d76f85.png",
@@ -16,11 +16,11 @@
     "static/media/home.svg": "/islamApp_test/static/media/home.ad67136ae22b4202b865b26b4594c590.svg",
     "index.html": "/islamApp_test/index.html",
     "main.e4f760f2.css.map": "/islamApp_test/static/css/main.e4f760f2.css.map",
-    "main.5ebf3031.js.map": "/islamApp_test/static/js/main.5ebf3031.js.map",
+    "main.233c7927.js.map": "/islamApp_test/static/js/main.233c7927.js.map",
     "453.a2746f50.chunk.js.map": "/islamApp_test/static/js/453.a2746f50.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e4f760f2.css",
-    "static/js/main.5ebf3031.js"
+    "static/js/main.233c7927.js"
   ]
 }
