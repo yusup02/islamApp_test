@@ -8,6 +8,12 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  /* Убирает подчеркивание */
+  color: inherit;
+}
+
 body {
   color: var(--background-color-light);
 }
@@ -16,46 +22,79 @@ body {
   background: var(--text-color-light);
 }
 
-.conteiner {
+/*Container*/
+.container {
   margin: 0 auto;
-  max-width: 565px;
+  height: 100vh;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 24px;
 }
 
-.header {
-  padding-top: 32px;
-  margin-left: 30px;
+.title {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Центрируем элементы по горизонтали */
+  justify-content: center;
+  /* Центрируем элементы по вертикали */
+  flex-grow: 1;
+  /* Занимаем оставшееся пространство */
 }
 
-option {
-  background-color: none;
+/*Header*/
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  position: relative;
+  min-height: 40px;
 }
 
-a {
-  text-decoration: none; /* Убирает подчеркивание */
-  color: inherit;
+/*Смена языка*/
+.language {
+  position: absolute;
+  top: 4px;
+  right: 13px;
+  display: inline-block;
+  width: 46px;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  appearance: none;
+  background: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M4%206L8%2010L12%206%22%20stroke%3D%22white%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E) no-repeat right 0px center;
+  background-size: 16px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  word-spacing: 4.07px;
 }
 
+.language:focus {
+  outline: none;
+  /* Убирает обводку при фокусе и клике */
+  border: none;
+}
+
+/*Меню*/
 .menu {
   list-style-type: none;
   padding: 8px 16px;
   color: #000;
 
-  font-feature-settings: "liga" off, "clig" off;
-  /* Subheadline/Regular */
-  font-family: "SF Pro";
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: -0.23px;
+  font-stretch: 107%;
 }
 
 .menu:hover {
-  border-radius: 40px;
-  background: var(--Grays-Black, #000);
-  color: var(--background-color-light);
-  cursor: pointer;
+  letter-spacing: -0.23px;
+  color: #646464;
 }
 
 .menu_active {
@@ -69,16 +108,11 @@ a {
   border-radius: 25px;
   background-color: var(--background-color-light);
   padding: 2px;
-  display: flex;
-  flex-direction: column; /* По умолчанию вертикальное меню */
-}
-
-.menu-toggle {
   display: none;
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
+  flex-direction: column;
+  /* По умолчанию вертикальное меню */
+
+  width: auto;
 }
 
 .navigation_menu {
@@ -97,96 +131,149 @@ a {
   transition: max-height 1.3s ease;
 }
 
-/* Стили для открытого состояния меню */
-.dropdown-content.open {
-  max-height: 300px; /* Достаточное значение для отображения всех элементов */
-  transition: max-height 1.3s ease; /* Анимация открытия */
+/*button*/
+button:hover {
+  color: #646464;
 }
 
+/*Навбар*/
+.mobile-navbar {
+  display: none;
+}
+
+.menu_img {
+  display: none;
+}
+
+option {
+  background-color: none;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+}
+
+.nav-item:hover {
+  color: #646464;
+  letter-spacing: -0.23px;
+}
+
+.bar_img {
+  width: 24px;
+  height: 24px;
+  margin-top: 0px;
+}
+
+span {
+  font-size: 12px;
+}
+
+.title_inner {
+  display: grid;
+  height: 99vh;
+}
+
+/*page-title*/
 .page-title {
-  margin-top: 56px;
+  margin-top: 55px;
+  margin-bottom: 54px;
   align-self: stretch;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 .page-title_islamapp {
   color: var(--text);
   text-align: center;
-  font-family: "Roboto Flex";
   font-size: 52px;
   font-style: normal;
   font-weight: 800;
-  line-height: normal;
   letter-spacing: 0.37px;
+  max-width: 421px;
+  font-stretch: 130%;
 }
 
 .page-title_text {
   margin-top: 12px;
   color: var(--text);
   text-align: center;
-  font-family: "Roboto Flex";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 28px;
   letter-spacing: 0.37px;
+  font-stretch: 115%;
 }
 
 .page-title_nstall {
-  margin-top: 40px;
-  height: 43px;
+  min-width: 172.44px;
   padding: 12px 24px;
 
   border-radius: 100px;
-  background: linear-gradient(135deg, #08e045 0%, #85ed35 57.72%, #c6f62a 100%);
+  background: #fff;
   border: none;
-  color: var(--background-color-light);
+  color: #000;
 
-  text-align: center;
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Roboto Flex";
-  font-size: 16px;
+  text-align: center;
+  font-size: 17px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  flex: 1;
 }
 
 .page-title_nstall:hover {
   cursor: pointer;
 }
 
-.islamApp_conteiner {
+.button {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+/*Мокап*/
+.islamApp {
   position: relative;
-  bottom: 0;
+  display: block;
+  align-self: end;
+  margin: auto;
+  max-width: 375px;
+  height: 439px;
+  min-height: 439px;
+}
+
+.mockup {
   display: flex;
   align-items: center;
-  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
-.language {
-  outline: none; /* Убирает обводку при фокусе и клике */
-  border: none;
-  display: flex;
-  background-color: transparent;
-  border: none;
-  color: white;
-
-  font-feature-settings: "liga" off, "clig" off;
-  /* Subheadline/Regular */
-  font-family: "SF Pro";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px; /* 133.333% */
-  letter-spacing: -0.23px;
+.islamApp_mockup {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 342px;
+  z-index: 2;
 }
 
-.language:focus {
-  outline: none; /* Убирает обводку при фокусе и клике */
-  border: none;
+.islamApp_screen {
+  width: 307px;
+  height: 668px;
+  z-index: 0;
+  object-fit: cover;
+  border-radius: 50px;
 }
 
 /* Слой с градиентом */
@@ -195,143 +282,142 @@ a {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 268px;
-  height: 400.958px;
-  /* Градиент и анимация */
-  background: conic-gradient(
-    from 0deg,
-    #ff5f6d,
-    #ffc371,
-    #ff5f6d,
-    #0072ff,
-    #00c6ff,
-    #ff5f6d
-  );
-  background-size: 200% 200%; /* Увеличенный размер для плавного перехода */
-  animation: gradientAnimation 10s ease infinite; /* Анимация */
-  filter: blur(50px); /* Размытие для свечения */
-  border-radius: 30px;
+  width: 384px;
+  width: 108%;
+  height: 102%;
+  filter: blur(35px);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   z-index: -1;
+  overflow: hidden;
 }
 
-.islamApp {
+.gradient-background::before {
+  content: "";
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%); /* Центрирование изображения */
-  width: 339px;
-  z-index: 2; /* Размещаем изображение выше градиента */
+  top: 0;
+  left: -100%;
+  /* Начальное положение за пределами контейнера */
+  width: 300%;
+  /* Увеличенная ширина для создания эффекта движения */
+  height: 100%;
+  background: linear-gradient(to right,
+      #ff5f6d,
+      #ffc371,
+      #ff5f6d,
+      #0072ff,
+      #00c6ff,
+      #ff5f6d);
+  animation: gradientAnimation 12s ease-in-out infinite;
+  /* Используем ease-in-out для плавности */
 }
 
-.islamApp_img {
-  height: auto;
-  display: block;
-  border-radius: inherit;
-  width: 339px;
-}
-
-/* Ключевые кадры для анимации */
 @keyframes gradientAnimation {
   0% {
-    background-position: 0% 50%;
+    transform: translateX(0);
   }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
-@media only screen and (min-width: 1824px) {
-  .page-title {
-    margin-top: 190px;
+  50% {
+    transform: translateX(calc(100% / 3));
+    /* Сдвиг на треть ширины */
+  }
+
+  100% {
+    transform: translateX(0);
+    /* Возврат в исходное положение */
   }
 }
 
 /* Медиазапрос для мобильных устройств */
 @media (max-width: 768px) {
-  .conteiner {
-    max-width: 575px;
+  .container {
+    height: auto;
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .menu {
+    font-size: 16px;
+  }
+
+  .language {
+    position: static;
+    padding-bottom: 4px;
+    padding-top: 4px;
   }
 
   .navigation_menu {
-    max-height: 0; /* Меню скрыто */
+    height: 87px;
   }
 
   .header {
     justify-content: space-between;
     width: 100%;
+    margin-top: 0;
+    min-height: auto;
   }
 
   .navigation {
-    margin: 0;
-    margin-right: 30px;
+    display: none;
+  }
+
+  .title_inner {
     height: auto;
-  }
-
-  .menu-toggle {
-    display: block; /* Показываем кнопку на мобильных устройствах */
-  }
-
-  .navigation_menu {
-    display: block;
-  }
-
-  .dropdown-content.open {
-    max-height: 300px; /* Плавное раскрытие меню */
-  }
-
-  .gradient-background {
-    width: 184px;
-    height: 282px;
-    bottom: -7.8%;
+    margin-bottom: 24px;
   }
 
   .islamApp {
-    width: 233px;
-    height: auto;
-    bottom: -7.8%;
-  }
-
-  .islamApp_img {
-    width: 100%;
     height: auto;
   }
 
-  .page-title_islamapp {
-    font-size: 46px;
-  }
 
-  .page-title_text {
-    font-size: 22px;
-  }
-}
 
-@media (max-width: 568px) {
-  .container {
-    max-width: 355px;
-  }
-
-  .gradient-background {
-    width: 162px;
-    height: 258px;
-    bottom: -8%;
-  }
-
-  .islamApp {
-    width: 207px;
+  .page-title {
+    margin-top: 32px;
+    margin-bottom: 53px;
   }
 
   .title_islamapp {
     font-size: 32px;
+    font-stretch: 127%;
   }
 
-  .page-title_nstall {
-    margin-top: 26px;
+  .page-title_text {
+    font-size: 17px;
   }
 
-  .page-title {
-    margin-top: 33px;
+  div .page-title_nstall {
+    min-width: 146.44px;
+    padding: 12px 27px;
+    font-size: 16px;
+  }
+
+  .page-title_islamapp {
+    font-size: 31px;
+  }
+
+  .mobile-navbar {
+    /* display: flex; */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 52px;
+    background: rgba(0, 0, 0, 0.42);
+    backdrop-filter: blur(35px);
+    border-top: 0.5px solid #ccccdd99;
+    z-index: 999;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .qr_cod {
+    display: none;
+  }
+
+  .gradient-background {
+    width: 100%;
+    height: 100%;
   }
 }

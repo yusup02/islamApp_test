@@ -1,29 +1,35 @@
 {
-  "en": {
-    "home": "home",
-    "patners": "Patners",
+ "en": {
+    "home": "Home",
+    "partners": "For Partners",
     "mosque": "For Mosques",
     "contact": "About Us",
-    "description": "Exact time of Azan and Quran",
-    "download": "Download",
-    "mosque_islamApp": "IslamApp for Mosque",
-    "application": "The application is free",
-    "times": "Free, we help you calculate prayer times",
-    "times_1": "Exact time for the entire region",
-    "bid": "Leave a request",
+    "description": "Accurate Azan Time and Quran",
+    "download": "Install",
+    "mosque_islamApp": "IslamApp for Mosques",
+    "application": "The app is free",
+    "times": "Free, helps calculate prayer times",
+    "times_1": "Accurate time for the entire region",
+    "bid": "Submit an application",
     "Already helped": "Already helped",
-    "Samara region": "Samara region",
-    "Murmansk region": "Murmansk region",
-    "Sterlitamaksky district": "Sterlitamaksky district",
-    "Monthly schedule": "Monthly schedule",
-    "Share": "Share a convenient schedule in 1 click",
-    "questions": "Still have questions or have a suggestion?",
-    "Contact us": "Contact us"
+    "Samara region": "Samara Region",
+    "Murmansk region": "Murmansk Region",
+    "Sterlitamaksky district": "Sterlitamaksky District",
+    "Monthly schedule": "Monthly Schedule",
+    "Share": "Share a convenient schedule in one click",
+    "questions": "Have any questions or suggestions?",
+    "Contact us": "Contact Us",
+    "QR-cod": "Show QR Code",
+    "mockup": {
+      "image": "ScreenEN",
+      "alt": "Mockup in English",
+      "title": "Mockup title in English"
+    }
   },
   "ru": {
     "home": "Главная",
-    "patners": "Патнерам",
-    "mosque": "Для Мечетей",
+    "patners": "Партнерам",
+    "mosque": "Мечетям",
     "contact": "О нас",
     "description": "Точное время азана и Коран",
     "download": "Установить",
@@ -39,6 +45,12 @@
     "Monthly schedule": "Расписание на месяц",
     "Share": "Поделиться удобным расписанием в 1 клик",
     "questions": "Остались вопросы или есть предложение?",
-    "Contact us": "Свяжитесь с нами"
+    "Contact us": "Свяжитесь с нами",
+    "QR-cod": "Показать QR-код",
+    "mockup": {
+      "image": "ScreenRU",
+      "alt": "Мокап на русском",
+      "title": "Заголовок мокапа на русском"
+    }
   }
 }

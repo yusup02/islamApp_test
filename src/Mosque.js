@@ -21,7 +21,7 @@ const Mosque = () => {
           </a>
 
           <div>
-            <img className="screen" src={screen} alt="" />
+            <img className="screen" src={screen} alt=""/>
           </div>
         </div>
 

@@ -1,11 +1,11 @@
 .container {
-  max-width: 1100px;
   width: 100%;
   margin: 0 auto;
 }
 
 .language-mosque {
   color: var(--background-color-dark);
+  background: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M4%206L8%2010L12%206%22%20stroke%3D%22black%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E) no-repeat right 0px center;
 }
 
 .logo {
@@ -120,9 +120,6 @@
 
 /* Медиазапрос для мобильных устройств */
 @media (max-width: 768px) {
-  .container {
-    max-width: 675px;
-  }
 
   .logo {
     width: 50px;
@@ -146,8 +143,3 @@
   }
 }
 
-@media (max-width: 568px) {
-  .container {
-    max-width: 355px;
-  }
-}

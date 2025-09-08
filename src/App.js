@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
-import { TranslationProvider, useTranslation } from "./TranslationContext";
+import { TranslationProvider } from "./TranslationContext"; // Убрал ненужный импорт useTranslation
 import "./App.css";
 import Header from "./Header";
 import Mosque from "./Mosque";
@@ -8,20 +8,7 @@ import Partners from "./Partners";
 import Contact from "./Contact";
 import Home from "./Home";
 
-
-const App = () => {
-  return (
-    <TranslationProvider>
-      <Router>
-        <Header />
-        <MainContent />
-      </Router>
-    </TranslationProvider>
-  );
-};
-
 const MainContent = () => {
-
   const location = useLocation();
 
   useEffect(() => {
@@ -38,17 +25,38 @@ const MainContent = () => {
     };
   }, [location.pathname]);
 
+  return (
+    <Routes>
+      <Route path="/mosque" element={<Mosque />} />
+      <Route path="/partners" element={<Partners />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/islamApp_test/" element={<Home />} /> {/* Исправлен путь */}
+      <Route path="/" element={<Home />} /> {/* Добавлен путь для главной страницы */}
+    </Routes>
+  );
+};
+
+const App = () => {
+  return (
+    <TranslationProvider>
+      <Router>
+        <AppContent /> {/* Оборачиваем контент в отдельный компонент */}
+      </Router>
+    </TranslationProvider>
+  );
+};
+
+const AppContent = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/' || location.pathname === '/islamApp_test/'; // Проверяем оба пути для главной страницы
 
   return (
-    <div>
-      <Routes>
-        <Route path="/mosque" element={<Mosque />} />
-        <Route path="/partners" element={<Partners />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/islamApp_test/" element={<Home />} />
-      </Routes>
+    <div className="container">
+      <Header />
+      <MainContent />
     </div>
   );
 };
+
 
 export default App;

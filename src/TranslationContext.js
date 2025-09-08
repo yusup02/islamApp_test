@@ -15,7 +15,7 @@ export const TranslationProvider = ({ children }) => {
   };
 
   return (
-    <TranslationContext.Provider value={{ language, changeLanguage, translate }}>
+    <TranslationContext.Provider rel="preload" value={{ language, changeLanguage, translate }}>
       {children}
     </TranslationContext.Provider>
   );
